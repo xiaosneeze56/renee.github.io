@@ -5,11 +5,12 @@
 <title>Experience</title>
 
 <style>
+	/* FIX THE LOGOS LATER */
 
 body {
 	font-family: helvetica, sans-serif;
 	margin: 0 auto;
-	max-width: 600px;
+	max-width: 800px; /* changing this screws up the formatting */
 	background: #232323;
 	background-image: url("https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif");
 	background-repeat: no-repeat;
@@ -47,7 +48,7 @@ h3 {
 	font-family: 'Londrina Shadow', cursive;
 	text-align: center;
 	font-size: 10px;
-	margin: 10px 0 0 0;
+	margin: 5px 0 0 5px;
 }
 
 ul {
@@ -71,6 +72,11 @@ table, th, td {
 	border-color:rgba(0,0,0,0.5); /* transparent */
 	color: white;
 	padding: 0 0 0 10px;
+}
+
+tr.tableSpacing { /*this is the function tableSpacing to be called by td tags*/
+		padding-bottom: 15%;
+		padding-top: 15%;
 }
 
 p {
@@ -115,42 +121,42 @@ p {
 <p align="center">
 	<span style="display:inline-block; width:100%;"></span>
 	<table style="width:100%">
-		<tr align="center">
+		<tr class="tableSpacing"; align="center">
+			<td></td>
 			<td><b>Experience</b><br></br></td>
 			<td><b>Dates</b></td>
-			<td><b>Description</b></td>
+			<td style="width: 100px;"><b>Location</b></td>
+			<!-- the width: 100px thing doesn't work; rm how to make individual columns bigger/smaller -->
 		</tr>
 
-		<tr>
+		<tr class="tableSpacing"></tr>
+			<td><img src="https://lh5.googleusercontent.com/_mVwNZmXUbTM/TXV1tWiyPgI/AAAAAAAACSo/QxXsOWUz-60/eng.gif"
+					 style="width:220px; height:100px"></td>
 			<td>Undergraduate intern at the University of Virginia Biomedical Engineering Design Laboratory</td>
 			<td>10/2016- Present</td>
 			<td>
-				<dl>
-					<dt>- Training in Solidworks and 3D printing software<br></br></dt>
-					<dt>- Goal of the lab: Medical design innovation</dt>
-				</dl>
+				Charlottesville, VA
 			</td>
 		</tr>
 
-		<tr>
+		<tr class="tableSpacing"></tr>
+			<td><img src="http://www.vbschools.com/siteImages/vbcps_logoWHT.jpg"
+					 style="width: 180px; height: 100px"></td>
 			<td>Intern at Virginia Beach City Public Schools (VBCPS)</td>
 			<td>3/2016-4/2016</td>
 			<td>
-				<dl>
-					<dt>- Algebra II teacher<br></br></dt>
-					<dt>- Helped plan and teach classroom lessons</dt>
-				</dl>
+				Virginia Beach, VA
 			</td>
 		</tr>
 
 		<tr>
+			<td><img src="http://web.lib.fju.edu.tw/chi/sites/default/files/img/english_learning/studio.jpg"
+					 style="width:250px; height: 60px"</td>
 			<td>Intern at Overseas Radio and Television (ORTV)</td>
 			<td>6/2014-8/2014</td>
 			<td>
-				<dl>
-					<dt>- English teacher at public events and on Advanced Studio Classroom radio<br></br></dt>
-					<dt>- Audio department intern<br></br></dt>
-					<dt>- Art department intern</dt>
+				Taipei, Taiwan
+			</td>
 		</tr>
 			
 </p>
