@@ -7,7 +7,7 @@
 <style>
 
 body {
-	font-family: helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	margin: 0 auto;
 	max-width: 600px;
 	background: #232323;
@@ -28,7 +28,7 @@ div {
 
 h1 {
 	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:700' rel='stylesheet' type='text/css'>
-	font-family: 'Londrina Shadow', cursive;
+	font-family: Arial, Helvetica, sans-serif;
 	text-align: center;
 	font-size: 90px;
 	color: white;
@@ -44,7 +44,7 @@ h2 {
 }
 
 h3 {
-	font-family: 'Londrina Shadow', cursive;
+	font-family: Arial, Helvetica, sans-serif;
 	text-align: center;
 	font-size: 10px;
 	margin: 10px 0 0 0;
@@ -67,16 +67,18 @@ a:active {
 }
 
 table, th, td {
-	border: 1px solid white;
+	border: 1px;
+	border-color: rgba(0,0,0,0.5);
 	color: white;
 	padding: 0 0 0 20px;
+	background: rgba(10,10,50,0.75);
 }
 
 p {
 	color: white;
 	font-size: 20px;
-	text-align: left;
-	font-family: 'Arial';
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
 	background: rgba(10,10,50,0.75);
 	padding: 20px 50px 20px 10px;
 	margin: auto;
@@ -90,6 +92,17 @@ p {
 }
 */
 
+	td.tableSpacing { /*this is the function tableSpacing to be called by td tags*/
+		padding-bottom: 3%;
+		padding-top: 3%;
+	}
+
+	td.titleCellSpacing {
+		border: 1px;
+		border-color: white;
+		/* why is this not working help */
+	}
+
 </style>
 
 </head>
@@ -97,16 +110,17 @@ p {
 <body>
 
 <h1>Skills</h1>
-
-<h2>
+	<!--wow so this really is different from CSS-->
+<h2 style="font family: Arial, Helvetica, sans-serif;">
+	<!--GET RID OF THIS COMIC SANS AHHHHH-->
 	<ul>
-      		<li><a href="file:///C:/Users/student/Desktop/digital%20portfolio/digital%20resume%20of%20fun.html">Home</a></li>
-		<li><a href="file:///C:/Users/student/Desktop/digital%20portfolio/about.html#">About</a></li>
-      		<li><a href="file:///C:/Users/student/Desktop/digital%20portfolio/education.html">Education</a></li>
-      		<li><a href="file:///C:/Users/student/Desktop/digital%20portfolio/experience.html">Experience</a></li>
-		<li><a href="file:///C:/Users/student/Desktop/digital%20portfolio/skills.html">Skills</a></li>
-		<li><a href="file:///C:/Users/student/Desktop/digital%20portfolio/projects.html">Projects</a></li>
-		<li><a href="file:///C:/Users/student/Desktop/digital%20portfolio/community_service.html">Community Service</a></li>
+      		<li><a href="https://xiaosneeze56.github.io">Home</a></li>
+		<li><a href="https://xiaosneeze56.github.io/about.html">About</a></li>
+      		<li><a href="https://xiaosneeze56.github.io/education.html">Education</a></li>
+      		<li><a href="https://xiaosneeze56.github.io/experience.html">Experience</a></li>
+		<li><a href="https://xiaosneeze56.github.io/skills.html">Skills</a></li>
+		<li><a href="https://xiaosneeze56.github.io/projects.html">Projects</a></li>
+		<li><a href="https://xiaosneeze56.github.io/community_service.html">Community Service</a></li>
 		<li><a href="#">Contact Me</a></li>
 	</ul>
 </h2>
@@ -118,80 +132,107 @@ p {
 	<table style="width:100%">
 		<tr>
 			<td><b>Language</b></td>
-			<td><b>Description</b></td>
+			<!--note how one can either call the CSS class or write in the style-->
+			<td><b>Spoken</b></td>
+			<td><b>Written</b></td>
+			<td><b>Read</b></td>
+		</tr>
+		<tr class="titleCellSpacing"></tr>
+		<tr>
+			<td class="tableSpacing">English</td>
+			<td>Advanced</td>
+			<td>Advanced</td>
+			<td>Advanced</td>
 		</tr>
 
 		<tr>
-			<td>Mandarin Chinese</td>
-			<td>I can read, write, and speak Mandarin Chinese.</td>
+			<td class="tableSpacing">Mandarin Chinese</td>
+			<td>Intermediate</td>
+			<td>Basic</td>
+			<td>Basic</td>
 		</tr>
 
 		<tr>
-			<td>French</td>
-			<td>I can read, write, and speak French.</td>
+			<td class="tableSpacing">French</td>
+			<td>Intermediate</td>
+			<td>Intermediate</td>
+			<td>Intermediate</td>
 		</tr>
+		<td class="tableSpacing"></td>
 
 	</table>
 
-	<p>Computer Languages</p>
+	<p>Programming</p>
 	<table style="width: 100%">
 		<tr>
 			<td><b>Language</b></td>
-			<td><b>Description</b></td>
+			<td><b>Proficiency</i></b></td>
 		</tr>
 
 		<tr>
-			<td>HTML, Javascript, CSS</td>
-			<td>I know the basics of web development!</td>
+			<td class="tableSpacing">HTML, CSS</td>
+			<td>Intermediate, Sololearn certified</td>
 		</tr>
 
 		<tr>
-			<td>Python</td>
-			<td>I know the basics of VPython and object-oriented programming.</td>
+			<td class="tableSpacing">C++</td>
+			<td>Intermediate, Sololearn certified</td>
 		</tr>
+		
+		<tr>
+			<td class="tableSpacing">Python</td>
+			<td>Basic</td>
+		</tr>
+
+		<tr>
+			<td class="tableSpacing">Arduino</td>
+			<td>Basic</td>
+		</tr>
+
+		<td class="tableSpacing"></td>
+
 	</table>
 
-	<p>Applications and Software Mastery</p>
+	<p>Applications and Software</p>
 	<table style="width: 100%">
 		<tr>
-			<td><b>Application/Software</b></td>
-			<td><b>Description of Skills</b></td>
+			<td class="tableSpacing"><b>Software</b></td>
+			<td><b>Proficiency</b></td>
 		</tr>
 	
 		<tr>
-			<td>Autodesk Fusion 360</td>
-			<td>Hello there</td>
+			<td class="tableSpacing">Autodesk Fusion 360, Inventor</td>
+			<td>Working knowledge</td>
 		</tr>
 
 		<tr>
-			<td>Audacity</td>
-			<td>Hello there</td>
+			<td class="tableSpacing">Solidworks</td>
+			<td>Working knowledge</td>
 		</tr>
 
 		<tr>
-			<td>Photoshop/Gimp</td>
-			<td>Hello there</td>
+			<td class="tableSpacing">MatLab</td>
+			<td>Basic knowledge</td>
 		</tr>
 
 		<tr>
-			<td>Microsoft Office</td>
-			<td>
-				<dl>
-					<dt>- Word 2013</dt>
-					<dt>- Powerpoint 2013</dt>
-					<dt>- Excel 2013</dt>
-				</dl>
-			</td>
+			<td class="tableSpacing">Microsoft Visual Studio</td>
+			<td>Basic knowledge</td>
 		</tr>
 
 		<tr>
-			<td>Moviemaker and iMovie</td>
-			<td>
-				<dl>
-					<dt>- I have created numerous short movies using these two programs.</dt>
-					<dt>- Proof of these accomplishments may be found in the <em>Experience</em> section of this portfolio.</dt>
-				</dl>
-			</td>
+			<td class="tableSpacing">Autodesk Mudbox</td>
+			<td>Basic knowledge</td>
+		</tr>
+
+		<tr>
+			<td class="tableSpacing">Autodesk Maya</td>
+			<td>Basic knowledge</td>
+		</tr>
+
+		<tr>
+			<td class="tableSpacing">Photoshop/Gimp</td>
+			<td>Basic knowledge</td>
 		</tr>
 
 </h3>
